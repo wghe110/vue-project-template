@@ -1,15 +1,45 @@
 <template>
   <div class="wrap-layout">
-    <header></header>
+    <header>
+      <el-button @click="loginOutFn">退出登录</el-button>
+    </header>
     <section class="content">
       <router-view></router-view>
     </section>
-    <footer></footer>
+    <footer>
+      <router-link to="/a">
+        <el-button>a</el-button>
+      </router-link>
+      <router-link to="/b">
+        <el-button>b</el-button>
+      </router-link>
+    </footer>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+
+    }
+  },
+  created() {
+    this.initFn();
+  },
+  methods: {
+    initFn() {
+      const token = localStorage.getItem('token');
+      if(!token) {
+        this.$router.push('/login')
+      }
+    },
+    loginOutFn() {
+      localStorage.clear();
+      this.$router.push('/login')
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

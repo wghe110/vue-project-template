@@ -1,11 +1,14 @@
 import VueRouter from 'vue-router';
+import Vue from 'vue'
+Vue.use(VueRouter)
 
 const router = new VueRouter({
   routes: [
     {
       path: '/',
       name: 'main',
-      component: () => import('@/views/layout/index.vue')
+      component: () => import('@/views/layout/index.vue'),
+      children: []
     },
     {
       path: '/login',
@@ -17,11 +20,6 @@ const router = new VueRouter({
       name: 'third-login',
       component: () => import('@/views/system/third-login/index.vue')
     },
-    {
-      path: '/*',
-      name: '404',
-      component: () => import('@/views/system/404/index.vue')
-    }
   ]
 })
 

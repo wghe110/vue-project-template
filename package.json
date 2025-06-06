@@ -41,7 +41,8 @@
     },
     "rules": {
       "vue/multi-word-component-names": 0,
-      "no-unused-vars": 1
+      "no-unused-vars": 1,
+      "no-debugger": 1
     }
   },
   "browserslist": [
