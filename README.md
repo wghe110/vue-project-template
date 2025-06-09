@@ -1,24 +1,7 @@
-# 5g_pc-new
+# vue脚手架
 
-## Project setup
-```
-npm install
-```
+## 类型
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- vue2/vue-cli 分支：`vue-cli_vue2`
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
