@@ -1,24 +1,25 @@
-# 5g_pc-new
+# vue2 vue-cli脚手架
 
-## Project setup
-```
-npm install
-```
+## node版本
+`v20.10.0`
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 命令行
+- 安装依赖：`npm install`
+- 启动开发环境：`npm run dev`
+- 打包：`npm run build`
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 功能集成
+- vue2
+- vue-cli
+- eslint
+- sass
+- element-ui
+- axios
+- normalize.css
+- vue-router@3
+- vuex
+- 动态路由注册
+- 请求封装
+- 工具插件：`lodash`、`date-fns`、`jsencrypt`
+- 菜单渲染
+- 预加载功能
