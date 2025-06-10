@@ -2,10 +2,7 @@ import router from './index'
 import store from '../store/index'
 import loadMenusFn from './preload/menus'
 
-const ignorePath = [
-  '/login',
-  '/third-login'
-];
+const ignorePath = ['/login', '/change-pwd', '/skeleton', '/demo', '/update-password', '/thirdAuthLogin', '/ticketLogin', '/404', '/errPage'];
 
 router.beforeEach(async (to, from, next) => {
   const { path, name } = to;
